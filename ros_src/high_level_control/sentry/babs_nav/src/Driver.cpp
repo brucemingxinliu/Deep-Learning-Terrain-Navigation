@@ -165,7 +165,7 @@ void Driver::process_cloud(const sensor_msgs::PointCloud2& input)
 	// and we need to limit the height range
 	// height range should be be centered on ground instead of the height of the wobbler,
 	// wobbler is about 1 meter of the ground (but wobbler height is considered height 0)
-	double zMin = -5;
+	double zMin = 0;
 	double zMax = 3;
 	int xdim    = (int) (targetWidth / resolution);
 	int ydim    = (int) (targetLen / resolution);
@@ -790,7 +790,7 @@ int Driver::Go()
 		des_state_y = sin(des_state_psi) * carrot_dist + last_y;
 
 		ROS_INFO("prediction_memory: %f", prediction_memory);
-		if (prediction_memory <= 0.5) {
+		if (prediction_memory <= 0.03) {
 			ROS_WARN("DANGER, WILL ROBINSON, DANGER!!!");
 
 			stop(); // returns when stopped

@@ -681,10 +681,10 @@ int DataCollector::mainLoop()
 		double xDisplacement;
 		double yDisplacement;
 		// get 2 random numbers in range -1 to 1
-		double xmultiplier = ((double) rand() / (RAND_MAX)) * 2.0 - 1.0;
-		double ymultiplier = ((double) rand() / (RAND_MAX)) * 2.0 - 1.0;
-		double spawnx      = xmultiplier * 12; // 47 for the larger map, 12 for smaller map
-		double spawny      = ymultiplier * 12; // 47 for the larger map, 12 for smaller map
+		double xmultiplier = ((double) rand() / (RAND_MAX)) * 0.8 - 0.6;
+		double ymultiplier = ((double) rand() / (RAND_MAX)) * -33.0 - 1.0;
+		double spawnx      = xmultiplier * 1; // 47 for the larger map, 12 for smaller map
+		double spawny      = ymultiplier * 1; // 47 for the larger map, 12 for smaller map
 		double angle       = ((double) rand() / (RAND_MAX)) * 2 * M_PI;
 		model_state_srv_msg.request.model_state.pose.orientation =
 		  tf::createQuaternionMsgFromRollPitchYaw(0, 0, angle);

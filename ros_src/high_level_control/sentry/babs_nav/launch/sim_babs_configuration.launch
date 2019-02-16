@@ -1,10 +1,12 @@
 <launch>
 
 
+  
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
       <arg name="world_name" value="$(find exmpl_models)/testing_ground/testing_ground.world"/>
-  </include>
 
+  </include>
+  <include file="$(find glennan_second_floor)/launchers/add_glennan_2nd_flr.launch.xml"/>
   <param name="robot_description" command="$(find xacro)/xacro.py '$(find sentry_urdf)/urdf/sentry_standalone.urdf.xacro'" />
 
   <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model"

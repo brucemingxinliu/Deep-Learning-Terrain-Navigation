@@ -89,7 +89,7 @@ const double K_LAT_ERR_THRESH = 2 * widthBuffer; // deafult was 3.0;
 // char PATH_PREFIX[] = "/media/thomas/MasterDrive/training_data/";
 // char PATH_PREFIX[] = "/media/thomas/MasterDrive/training_data2/";
 // char PATH_PREFIX[] = "./";
-char PATH_PREFIX[] = "/media/thomas/MasterDrive/6/";
+char PATH_PREFIX[] = "/home/bruceleu/thesis_bruce/image_data/";
 
 // char PATH_PREFIX[]      = "/home/thomas/Desktop/thesis_partial/labeled_data/training_data/";
 double SPAWN_TIME_LIMIT    = 30; // SECONDS
