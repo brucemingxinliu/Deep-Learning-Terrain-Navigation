@@ -3,3 +3,4 @@ This work investigates a strategy for evaluating the navigability of terrain fro
 
 
 # Work picked up from here by Bruce
+the environment was changed to a glennan second floor with walls and obstacles. Essentially I want to train the robot to drive around obstacles in a existing world and apply that network to verify the training results. 
