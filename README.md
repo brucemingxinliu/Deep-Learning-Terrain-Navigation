@@ -8,3 +8,4 @@ the environment was changed to a glennan second floor with walls and obstacles. 
 BASIC order of command.
 Classifer_server.py is the nueral net controller.
 driver.cpp is the client that sends out image to the controller and receive command on good or no good to go.
+The training is done with a different set of environemnt. TJ worked on training BABS to drive on different terrians adepting skills to not tip over and fall down cliffs. Instead, my training is done in narrow spaces. In this case, the degree of freedom is much more limited. More driver assistance and strategies are needed to help BABS to navigate through narrow hall ways with obstacles. 
